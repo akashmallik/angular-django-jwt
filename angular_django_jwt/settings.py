@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # rest framework
     'rest_framework',
+    #jwt auth app
     'jwtAuth',
 ]
 
