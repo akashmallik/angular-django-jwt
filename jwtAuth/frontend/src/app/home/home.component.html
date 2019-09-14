@@ -1,0 +1,21 @@
+<h2>Log In</h2>
+<div class="row" *ngIf="!userService.token">
+  <div class="col-sm-4">
+    <label>Username:</label><br />
+    <input type="text" name="login-username" [(ngModel)]="user.username">
+</div>
+  <div class="col-sm-4">
+    <label>Password:</label><br />
+    <input type="password" name="login-password" [(ngModel)]="user.password">
+  </div>
+  <div class="col-sm-4">
+    <button (click)="login()" class="btn btn-primary">Log In</button>
+  </div>
+</div>
+<div class="row" *ngIf="userService.token">
+  <div class="col-sm-12">You are logged in as {{ userService.username }}.<br />
+    Token Expires: {{ userService.tokenExpires }}<br />
+    <button (click)="refreshToken()" class="btn btn-primary">Refresh Token</button>
+    <button (click)="logout()" class="btn btn-primary">Log Out</button>
+  </div>
+</div>
