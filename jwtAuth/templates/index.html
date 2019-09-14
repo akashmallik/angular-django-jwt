@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block css %}
-    <link rel="stylesheet" href="{% static 'frontend/styles.09e2c710755c8867a460.css' %}">
+    <link rel="stylesheet" href="{% static 'frontend/styles.css' %}">
 {% endblock css %}
 
 {% block content %}
@@ -10,10 +10,10 @@
 {% endblock content %}
 
 {% block js %}
-    <script src="{% static 'frontend/polyfills-es5.a83ac866abc867bfd530.js' %}" nomodule defer></script>
-    <script src="{% static 'frontend/polyfills-es2015.0fe6949bc5ff4b784062.js' %}" type="module"></script>
-    <script src="{% static 'frontend/runtime-es2015.85f895af57b038f1e5b4.js' %}" type="module"></script>
-    <script src="{% static 'frontend/main-es2015.f5c1842f6524971403bb.js' %}" type="module"></script>
-    <script src="{% static 'frontend/runtime-es5.85f895af57b038f1e5b4.js' %}" nomodule defer></script>
-    <script src="{% static 'frontend/main-es5.f5c1842f6524971403bb.js' %}" nomodule defer></script>
+    <script src="{% static 'frontend/polyfills-es5.js' %}" nomodule defer></script>
+    <script src="{% static 'frontend/polyfills-es2015.js' %}" type="module"></script>
+    <script src="{% static 'frontend/runtime-es2015.js' %}" type="module"></script>
+    <script src="{% static 'frontend/main-es2015.js' %}" type="module"></script>
+    <script src="{% static 'frontend/runtime-es5.js' %}" nomodule defer></script>
+    <script src="{% static 'frontend/main-es5.js' %}" nomodule defer></script>
 {% endblock js %}
